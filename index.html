@@ -63,11 +63,16 @@
 
 <body>
     <section>
-        <video controls loop muted autoplay="autoplay">
+        <video controls loop muted id="autoplay">
             <source src="video.mp4" type="video/mp4">
         </video>
             <h3>Happy Independence Day</h3>
     </section>
+    <script>
+        window.onload=function(){
+            document.getElementById('autoplay').play();
+        }
+    </script>
 </body>
 
 </html>
